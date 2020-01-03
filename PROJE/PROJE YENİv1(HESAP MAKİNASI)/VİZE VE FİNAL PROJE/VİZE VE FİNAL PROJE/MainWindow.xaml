@@ -1,0 +1,49 @@
+﻿<Window x:Class="VİZE_VE_FİNAL_PROJE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VİZE_VE_FİNAL_PROJE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFD6CCCC">
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="140,85,0,0" VerticalAlignment="Top" Width="75" Click="btn6_Click" Background="#FF0EF019" BorderBrush="#FFF70D0D"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="55,85,0,0" VerticalAlignment="Top" Width="75" Click="btn5_Click" Background="#FF09F714" BorderBrush="#FFF70707" RenderTransformOrigin="0.533,1.75"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="300,85,0,0" VerticalAlignment="Top" Width="75" Click="btn8_Click" Background="#FF0DF118" BorderBrush="#FFF50505"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="220,85,0,0" VerticalAlignment="Top" Width="75" Click="btn7_Click" Background="#FF13DA1C" BorderBrush="#FFF30D0D"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="220,55,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.733,-0.25" Click="btn3_Click" Background="#FF11E61B" BorderBrush="#FFF91414"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="300,55,0,0" VerticalAlignment="Top" Width="75" Click="btn4_Click" Background="#FF0CF917" BorderBrush="#FFF91313" Foreground="#FF111111"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="110,110,0,0" VerticalAlignment="Top" Width="75" Click="btn9_Click" Background="#FF11D41B" BorderBrush="#FFF10D0D"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="55,55,0,0" VerticalAlignment="Top" Width="75" Click="btn1_Click" Background="#FF14E41E" BorderBrush="#FFF50C0C" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.152"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btniki" Content="2" HorizontalAlignment="Left" Margin="140,55,0,0" VerticalAlignment="Top" Width="75" Click="btniki_Click" Background="#FF08FB14" BorderBrush="#FFF30808"/>
+        <Button x:Name="btntopla" Content="+" HorizontalAlignment="Left" Margin="510,45,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.133,-2.25" Click="btntopla_Click" Background="#FF10F3F3" BorderBrush="#FF0C0B0B"/>
+        <Button x:Name="btneksi" Content="-" HorizontalAlignment="Left" Margin="510,20,0,0" VerticalAlignment="Top" Width="165" Click="btneksi_Click" Background="#FF0EE7F1" BorderBrush="#FF080707"/>
+        <Button x:Name="btnbölme" Content="/" HorizontalAlignment="Left" Margin="510,70,0,0" VerticalAlignment="Top" Width="165" Click="btnbölme_Click" Background="#FF06FFFF" BorderBrush="#FF151414"/>
+        <Button x:Name="btnçarpma" Content="*" HorizontalAlignment="Left" Margin="510,95,0,0" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.515,4.25" Click="btnçarpma_Click" Background="#FF00FFE8" BorderBrush="#FF0E0C0C"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="195,110,0,0" VerticalAlignment="Top" Width="75" Click="btn0_Click" Background="#FF09F114" BorderBrush="#FFF31010"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="33" Margin="55,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Background="White"/>
+        <Button x:Name="btnvirgül" Content="," HorizontalAlignment="Left" Margin="420,55,0,0" VerticalAlignment="Top" Width="75" Click="btnvirgül_Click" Background="#FFF3F304" BorderBrush="#FFF31212"/>
+        <TextBox x:Name="RESULTBOX" HorizontalAlignment="Left" Height="35" Margin="85,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="335" RenderTransformOrigin="0.5,-0.043" Background="#FFFFC5C5"/>
+        <Button x:Name="btneşit" Content="=" HorizontalAlignment="Left" Margin="405,90,0,0" VerticalAlignment="Top" Width="90" Click="btneşit_Click" Background="#FF1CEEEE" BorderBrush="#FFF10D0D" Height="40"/>
+        <Label Content="SONUÇ" HorizontalAlignment="Left" Margin="25,150,0,0" VerticalAlignment="Top" Width="60" Height="33" Foreground="#FFF00303" RenderTransformOrigin="0.5,2.061" Background="#00000000" FontFamily="Segoe UI Black"/>
+        <Button x:Name="btnsilme" Content="SİL" HorizontalAlignment="Left" Margin="420,20,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnsilme_Click" Background="#FFBD16EE"/>
+        <ListBox x:Name="resultlistbox" HorizontalAlignment="Left" Height="170" Margin="492,215,0,0" VerticalAlignment="Top" Width="290" RenderTransformOrigin="-0.75,0.4" Background="#FFF7C2C2"/>
+        <Label Content="Enson Yapılan İşlem" HorizontalAlignment="Left" Margin="570,184,0,0" VerticalAlignment="Top" Width="130" FontFamily="Segoe UI Black" Background="#FFE82323"/>
+
+    </Grid>
+</Window>

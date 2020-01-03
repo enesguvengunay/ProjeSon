@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="792">
+            <TabItem x:Name="KAYIT" Header="KAYIT" Margin="0,0,-55,-2">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFB09B9B" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF03C9C9">
+                    <PasswordBox x:Name="pas1" ToolTip="Şifre en az 8 karakter olmalı, 1 büyük harf, 1 küçük harf ve 1 rakam içermesi gerek." ToolTipService.ShowDuration="1000" HorizontalAlignment="Left" Margin="137,71,0,0" VerticalAlignment="Top" Width="206" Height="25"/>
+                    <PasswordBox x:Name="pas2" ToolTip="Şifernizi Tekar Girin" ToolTipService.ShowDuration="1000" HorizontalAlignment="Left" Margin="137,101,0,0" VerticalAlignment="Top" Width="206" Height="25" RenderTransformOrigin="0.495,2.2"/>
+                    <Label Content="Kullanıcı Adı :" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Şifre Girin :" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="107"/>
+                    <Label Content="Şifrenizi Tekar Girin :" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="122"/>
+                    <TextBox x:Name="txtKullanıcıAdı" ToolTip="Kullanıcı Adı Giriniz" ToolTipService.ShowDuration="1000" HorizontalAlignment="Left" Height="35" Margin="137,31,0,0" TextWrapping="Wrap" Text="Kullanıcı adı girin&#xD;&#xA;" VerticalAlignment="Top" Width="206" GotFocus="txtKullanıcıAdı_GotFocus" Background="#FFFDFDFD"/>
+                    <Button x:Name="kayıtolbtn"  Content="KAYIT OL" HorizontalAlignment="Left" Margin="402,51,0,0" VerticalAlignment="Top" Width="105" Click="Kayıtolbtn_Click" Height="64" IsDefault="True" Background="#FFB8A1A1" FontFamily="Sitka Heading" FontSize="18"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="GİRİŞ" Header="GİRİŞ" IsSelected="True" Margin="55,0,-110,-2" RenderTransformOrigin="-1.227,0.591">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFB09B9B" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF03C9C9">
+                    <Label Content="Kullanıcı Adı:" ToolTip="Kullanıcı Adınızı Giriniz" ToolTipService.ShowDuration="1000" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="117">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.355"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <PasswordBox x:Name="loginpaswordbox" ToolTip="Şifrenizi Giriniz" ToolTipService.ShowDuration="1000" HorizontalAlignment="Left" Margin="147,52,0,0" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.474,1.278" Height="26"/>
+                    <TextBox x:Name="logintxtkullanıcıadı" HorizontalAlignment="Left" Height="23" Margin="147,14,0,0" TextWrapping="Wrap" Text="KULLANICI ADINIZI GİRİN&#xD;&#xA;" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.5,0.478" GotFocus="logintxtkullanıcıadı_GotFocus"/>
+                    <Label Content="Şifre:" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="82"/>
+                    <Button x:Name="girişbtn" Content="GİRİŞ YAP" HorizontalAlignment="Left" Margin="387,30,0,0" VerticalAlignment="Top" Width="130" Height="40" Click="girişbtn_Click" IsDefault="True" FontFamily="Sitka Heading" FontSize="18" Background="#FFB8A1A1"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="GİRİŞ_Copy" Header="HESAP MAKİNASI" IsSelected="True" Margin="107,0,-156,-2" IsEnabled="False">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFDFF500" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF03C9C9">
+                    <ComboBox x:Name="cbmboxkullanıcı" HorizontalAlignment="Left" Margin="666,0,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="btneşittir" Content="=" HorizontalAlignment="Left" Margin="462,10,0,0" VerticalAlignment="Top" Width="100" Height="45" RenderTransformOrigin="0.467,0.333" Click="btneşittir_Click"/>
+                    <TextBox x:Name="txthesaplama" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="385" GotFocus="txthesaplama_GotFocus"/>
+                    <ListBox x:Name="lstsonişlem" HorizontalAlignment="Left" Height="185" Margin="29,110,0,0" VerticalAlignment="Top" Width="348"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE.csprojAssemblyReference.cache
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\MainWindow.g.cs
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\App.g.cs
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE_MarkupCompile.cache
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE_MarkupCompile.lref
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\bin\Debug\VİZE VE FİNAL PROJE.exe.config
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\bin\Debug\VİZE VE FİNAL PROJE.exe
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\bin\Debug\VİZE VE FİNAL PROJE.pdb
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\MainWindow.baml
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE.g.resources
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE_VE_FİNAL_PROJE.Properties.Resources.resources
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE.csproj.GenerateResource.cache
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE.exe
+C:\Users\enesg\Desktop\PROJE YENİ\VİZE VE FİNAL PROJE\VİZE VE FİNAL PROJE\obj\Debug\VİZE VE FİNAL PROJE.pdb
